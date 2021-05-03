@@ -1,0 +1,34 @@
+#cart-form #cart-info {
+  display: none;
+}
+#cart-form #list-cart::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -1rem;
+  right: 0;
+  width: 7rem;
+  height: 2rem;
+  background: rgba(0, 0, 0, 0);
+}
+#cart-form #list-cart::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -2rem;
+  right: 1rem;
+  border: 1rem solid;
+  border-color: transparent transparent rgb(252, 165, 165, 0.5) transparent;
+}
+#cart-form:hover  #cart-info {
+  display: block;
+}
+/* input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+} */
+
+.invalidForm input {
+  border-color: rgba(247, 131, 241, 0.815);
+}
